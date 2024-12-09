@@ -12,33 +12,10 @@ Copylibrary-management-system/
 ├── run.py               # Application entry point
 ├── requirements.txt     # Project dependencies
 └── README.md            # Project documentation
+
+
 Prerequisites
-
-Python 3.8+
-pip
-Virtual environment (recommended)
-
-Setup and Installation
-
-Clone the Repository
-bashCopygit clone <repository-url>
-cd library-management-system
-
-Create a Virtual Environment
-bashCopypython3 -m venv venv
-
-Activate the Virtual Environment
-
-On macOS/Linux:
-bashCopysource venv/bin/activate
-
-On Windows:
-bashCopyvenv\Scripts\activate
+pip install -r requirements.txt
 
 
-
-Install Dependencies
-bashCopypip install -r requirements.txt
-
-Run the Application
-bashCopypython run.py
+python run.py
