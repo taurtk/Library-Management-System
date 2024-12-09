@@ -1,71 +1,44 @@
 Project Structure
-javascript
-
-
-library-management-system/
+Copylibrary-management-system/
 │
 ├── app/
-│   ├── __init__.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── book.py
-│   │   └── member.py
-│   │
-│   ├── routes/
-│   │   ├── __init__.py
-│   │   ├── book_routes.py
-│   │   ├── member_routes.py
-│   │   └── auth_routes.py
-│   │
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── book_service.py
-│   │   ├── member_service.py
-│   │   └── auth_service.py
-│   │
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── authentication.py
-│   │   └── pagination.py
-│   │
-│   └── tests/
-│       ├── __init__.py
-│       ├── test_book_routes.py
-│       ├── test_member_routes.py
-│       └── test_auth.py
+│   ├── models/          # Database models
+│   ├── routes/          # API route handlers
+│   ├── services/        # Business logic
+│   ├── utils/           # Utility functions
+│   └── tests/           # Unit and integration tests
 │
-├── config.py
-├── run.py
-├── requirements.txt
-└── README.md
+├── config.py            # Configuration settings
+├── run.py               # Application entry point
+├── requirements.txt     # Project dependencies
+└── README.md            # Project documentation
+Prerequisites
+
+Python 3.8+
+pip
+Virtual environment (recommended)
+
 Setup and Installation
-To set up and run the Library Management System, follow these steps:
-Clone the Repository:
-bash
 
-
-git clone <repository-url>
+Clone the Repository
+bashCopygit clone <repository-url>
 cd library-management-system
-Create a Virtual Environment:
-bash
 
+Create a Virtual Environment
+bashCopypython3 -m venv venv
 
-python3 -m venv venv
-Activate the Virtual Environment:
+Activate the Virtual Environment
+
 On macOS/Linux:
-bash
+bashCopysource venv/bin/activate
 
-
-source venv/bin/activate
 On Windows:
-bash
+bashCopyvenv\Scripts\activate
 
 
-venv\Scripts\activate
-Install Dependencies:
-bash
 
+Install Dependencies
+bashCopypip install -r requirements.txt
 
-pip install -r requirements.txt
-
-python run.py
+Run the Application
+bashCopypython run.py
